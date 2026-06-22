@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Navbar.css";
+import "./navBar.css";
 import { FaBars, FaTimes, FaSearch } from "react-icons/fa";
 
 const Navbar = () => {
@@ -10,7 +10,7 @@ const Navbar = () => {
       <div className="navbar-container">
 
         {/* Logo */}
-        <div className="logo">
+        <div className="navbar-logo">
           {/*<div className="logo-icon">✦</div>*/}
           <h2>Future<span>Path</span>
           </h2>
