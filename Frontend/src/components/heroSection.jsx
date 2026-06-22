@@ -1,14 +1,6 @@
 import React from "react";
 import "./HeroSection.css";
-import {
-  FaSearch,
-  FaMapMarkerAlt,
-  FaBriefcase,
-  FaBuilding,
-  FaUsers,
-  FaAward,
-  FaUpload
-} from "react-icons/fa";
+import {FaSearch, FaMapMarkerAlt, FaBriefcase, FaBuilding, FaUsers, FaAward, FaUpload} from "react-icons/fa";
 
 function HeroSection() {
   return (

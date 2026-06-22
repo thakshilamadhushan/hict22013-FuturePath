@@ -1,7 +1,10 @@
 .hero {
   min-height: 100vh;
   background: linear-gradient(90deg,#f5f6ff,#eef2ff,#f5f6ff);
-  padding: 80px 8%;
+  padding-top: 140px;
+  padding-bottom: 60px;
+  padding-left: 8%;
+  padding-right: 8%;
 }
 
 .hero-container {

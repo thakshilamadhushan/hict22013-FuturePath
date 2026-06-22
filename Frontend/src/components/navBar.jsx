@@ -11,9 +11,8 @@ const Navbar = () => {
 
         {/* Logo */}
         <div className="logo">
-          <div className="logo-icon">✦</div>
-          <h2>
-            Future<span>Path</span>
+          {/*<div className="logo-icon">✦</div>*/}
+          <h2>Future<span>Path</span>
           </h2>
         </div>
 
