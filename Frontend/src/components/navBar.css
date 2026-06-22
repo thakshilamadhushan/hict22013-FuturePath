@@ -10,23 +10,22 @@
 
 /* Navbar */
 .navbar{
-  width:100%;
-  padding:20px;
-  display:flex;
-  justify-content:center;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  z-index: 1000;
 }
 
 .navbar-container{
-  width:90%;
-  max-width:1600px;
   background:white;
   border-radius:22px;
-  padding:15px 30px;
+  padding:20px 8%;
   display:flex;
   align-items:center;
   justify-content:space-between;
   box-shadow:0 5px 25px rgba(0,0,0,0.08);
-  position:relative;
+  position:fixed;
 }
 
 /* Logo */
