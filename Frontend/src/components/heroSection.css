@@ -29,7 +29,8 @@
 }
 
 .hero-left h1 {
-  font-size: 70px;
+  font-size: 57px;
+  font-weight:bolder;
   line-height: 1.1;
   color: #0f172a;
   margin-bottom: 25px;
@@ -47,7 +48,7 @@
 
 .hero-left p {
   color: #64748b;
-  font-size: 20px;
+  font-size: 18px;
   max-width: 650px;
   line-height: 1.7;
 }
@@ -130,7 +131,8 @@
 .popular-tags button {
   border: 1px solid #e2e8f0;
   background: white;
-  padding: 10px 18px;
+  font-weight: 500;
+  padding: 6px 15px;
   border-radius: 30px;
 }
 

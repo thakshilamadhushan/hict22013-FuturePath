@@ -31,13 +31,13 @@
 }
 
 /* Logo */
-.logo{
+.navbar-logo{
   display:flex;
   align-items:center;
   gap:12px;
 }
 
-.logo-icon{
+.navbar-logo-icon{
   width:40px;
   height:40px;
   border-radius:50%;
@@ -50,13 +50,13 @@
   font-weight:bold;
 }
 
-.logo h2{
+.navbar-logo h2{
   font-size:25px;
   font-weight:700;
   color:#1f2937;
 }
 
-.logo span{
+.navbar-logo span{
   color:#5a3fff;
 }
 
@@ -70,7 +70,7 @@
 .nav-links li a{
   text-decoration:none;
   color:#4b5563;
-  font-size:16px;
+  font-size:13px;
   font-weight:500;
   transition:0.3s;
 }
@@ -93,7 +93,7 @@
   background:#f7f7fb;
   border:1px solid #e5e7eb;
   border-radius:30px;
-  padding:12px 18px;
+  padding:6px 18px;
   width:360px;
 }
 
@@ -128,7 +128,7 @@
 
 .signup-btn{
   border:none;
-  padding:12px 28px;
+  padding:9px 28px;
   border-radius:30px;
   cursor:pointer;
   color:white;
