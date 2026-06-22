@@ -4,6 +4,7 @@ import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import Navbar from './components/navBar.jsx'
 import HeroSection from './components/heroSection.jsx'
+import Footer from './components/footer.jsx'
 import './App.css'
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
     <>
       <Navbar />
       <HeroSection />
+      <Footer />
     </>
   )
 }
