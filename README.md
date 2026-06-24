@@ -1,5 +1,18 @@
+Group Name:
+Future Bulilders
+
+Members Indexes:
 GWU/HICT/2022/08
 GWU/HICT/2022/35
 GWU/HICT/2022/25
 GWU/HICT/2021/57
 GWU/HICT/2022/57
+
+Members Github User Names :
+thakshilamadhushan
+dilukshanjayasooriya
+Anuradhamga
+poornimarathnayaka
+Buddhini2003
+
+Repo Link : https://github.com/thakshilamadhushan/hict22013-FuturePath
