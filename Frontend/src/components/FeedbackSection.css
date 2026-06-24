@@ -5,7 +5,7 @@
 }
 
 .testimonials {
-  padding: 100px 20px;
+  padding: 5% 9%;
   background: radial-gradient(
       circle at top center,
       rgba(180, 75, 255, 0.6),
@@ -16,10 +16,6 @@
   color: #fff;
 }
 
-.container {
-  max-width: 1300px;
-  margin: 0 auto;
-}
 
 .section-header {
   text-align: center;
@@ -28,23 +24,26 @@
 
 .badge {
   display: inline-block;
-  padding: 10px 22px;
+  padding: 5px 22px;
   border-radius: 50px;
   border: 1px solid rgba(255, 255, 255, 0.25);
   background: rgba(255, 255, 255, 0.08);
+  -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
   font-size: 15px;
   margin-bottom: 25px;
+  justify-content: center;
+  align-items: center;
 }
 
 .section-header h2 {
-  font-size: 3rem;
+  font-size: 35px;
   font-weight: 700;
   margin-bottom: 15px;
 }
 
 .section-header p {
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   color: rgba(255, 255, 255, 0.85);
 }
 

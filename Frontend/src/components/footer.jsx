@@ -1,11 +1,6 @@
-
-import "./Footer.css";
-import {
-  FaTwitter,
-  FaLinkedinIn,
-  FaGithub,
-  FaInstagram,
-} from "react-icons/fa";
+import React from "react";
+import "./footer.css";
+import {FaTwitter, FaLinkedinIn, FaGithub, FaInstagram, FaEnvelope, FaGlobe} from "react-icons/fa";
 
 function Footer() {
   return (
@@ -15,7 +10,8 @@ function Footer() {
         {/* Left Section */}
         <div className="footer-brand">
           <div className="logo">
-            <h2>FuturePath</h2>
+            <h2>Future<span>Path</span></h2>
+            <p>AI-powered job discovery that connects the right talent with the right opportunity.</p>
           </div>
 
 
@@ -73,8 +69,8 @@ function Footer() {
           </div>
 
           <div className="contact-info">
-            <p>✉ futurepath@gmail.com</p>
-            <p>🌍 SL · Colombo · Sri Lanka
+            <p>{<FaEnvelope />} futurepath@gmail.com</p>
+            <p>{<FaGlobe />} SL · Colombo · Sri Lanka
             </p>
           </div>
         </div>

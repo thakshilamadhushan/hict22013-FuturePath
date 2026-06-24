@@ -1,12 +1,8 @@
-/* ============================
-   Browse By Industry - Styles
-   ============================ */
-
 .browse-section {
   background: #F4F5FB;
-  padding: 5% 8%;
+  padding: 5% 9%;
   font-family: 'Inter', 'Segoe UI', sans-serif;
-  min-height: 100vh;
+  min-height: fit-content;
   box-sizing: border-box;
 }
 
@@ -19,7 +15,7 @@
 }
 
 .browse-title {
-  font-size: clamp(1.6rem, 4vw, 2.2rem);
+  font-size: 35px;
   font-weight: 800;
   color: #0F1117;
   margin: 0;

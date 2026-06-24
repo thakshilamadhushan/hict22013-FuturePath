@@ -1,8 +1,7 @@
-
 .footer {
   background: #020817;
   color: #fff;
-  padding: 70px 8%;
+  padding: 70px 9%;
 }
 
 .footer-container {
@@ -12,10 +11,13 @@
 }
 
 .logo {
-  display: flex;
   align-items: center;
   gap: 12px;
   margin-bottom: 20px;
+}
+
+.logo span{
+  color:#5a3fff;
 }
 
 .logo-icon {
@@ -30,11 +32,12 @@
 
 .logo h2 {
   margin: 0;
-  font-size: 30px;
+  font-size: 1.5rem;
 }
 
 .footer-brand p {
   color: #94a3b8;
+  font-size: 0.9rem;
   line-height: 1.8;
   max-width: 280px;
 }
@@ -70,13 +73,14 @@
 .footer-links h3,
 .footer-newsletter h3 {
   margin-bottom: 25px;
-  font-size: 18px;
+  font-size: 1.1rem;
 }
 
 .footer-links a {
   text-decoration: none;
   color: #94a3b8;
   margin-bottom: 15px;
+  font-size: 0.9rem;
 }
 
 .footer-links a:hover {
@@ -85,6 +89,7 @@
 
 .footer-newsletter p {
   color: #94a3b8;
+  font-size: 0.9rem;
 }
 
 .newsletter-box {
@@ -94,7 +99,7 @@
 
 .newsletter-box input {
   flex: 1;
-  padding: 14px 20px;
+  padding: 10px 20px;
   border-radius: 50px;
   border: 1px solid #1e293b;
   background: #0f172a;
@@ -103,8 +108,8 @@
 }
 
 .newsletter-box button {
-  width: 55px;
-  height: 55px;
+  width: 45px;
+  height: 45px;
   margin-left: 10px;
   border: none;
   border-radius: 50%;
@@ -114,17 +119,29 @@
   font-size: 18px;
 }
 
+.newsletter-box button:hover {
+  background: #5a3fff;
+  font-size: 20px;
+}
+
 .contact-info p {
   margin-bottom: 10px;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-bottom {
-  margin-top: 60px;
+  margin-top: 40px;
   padding-top: 30px;
   border-top: 1px solid #1e293b;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.footer-bottom p {
+  color: #94a3b8;
+  font-size: 0.9rem;
 }
 
 .footer-bottom-links {
