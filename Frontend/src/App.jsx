@@ -6,6 +6,7 @@ import Navbar from './components/navBar.jsx'
 import HeroSection from './components/heroSection.jsx'
 import BrowseByIndustry from './components/browseByIndustry.jsx'
 import FuturePathProcess from './components/FuturePathProcess.jsx'
+import FeedbackSection from './components/FeedbackSection.jsx'
 import Footer from './components/footer.jsx'
 import './App.css'
 
@@ -18,6 +19,7 @@ function App() {
       <HeroSection />
       <BrowseByIndustry />
       <FuturePathProcess/>
+      <FeedbackSection/>
       <Footer />
     </>
   )
