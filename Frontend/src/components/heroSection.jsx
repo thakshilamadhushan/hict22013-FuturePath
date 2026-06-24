@@ -1,4 +1,6 @@
 import React from "react";
+import starIcon from "../assets/start.png";
+import HeroImage from "../assets/hero.png";
 import "./heroSection.css";
 import {FaSearch, FaMapMarkerAlt, FaBriefcase, FaBuilding, FaUsers, FaAward, FaUpload} from "react-icons/fa";
 
@@ -12,7 +14,7 @@ function HeroSection() {
         <div className="hero-left">
 
           <div className="hero-badge">
-            ✨ AI-Powered Job Matching Platform
+            <img src={starIcon} alt="AI Icon" />AI-Powered Job Matching Platform
           </div>
 
           <h1>
@@ -51,7 +53,7 @@ function HeroSection() {
                 />
               </div>
 
-              <select>
+              <select className="job-type-select">
                 <option>All Types</option>
                 <option>Full Time</option>
                 <option>Part Time</option>
@@ -91,56 +93,7 @@ function HeroSection() {
 
         {/* Right Side */}
 
-        <div className="hero-right">
-
-          <div className="dashboard-card">
-
-            <div className="dashboard-header">
-              <h3>AIMatch</h3>
-              <span>3 new roles found</span>
-            </div>
-
-            <div className="job-item">
-              <div>
-                <h4>AI Engineer</h4>
-                <p>Stripe</p>
-              </div>
-              <span>97%</span>
-            </div>
-
-            <div className="job-item">
-              <div>
-                <h4>ML Engineer</h4>
-                <p>OpenAI</p>
-              </div>
-              <span>93%</span>
-            </div>
-
-            <div className="job-item">
-              <div>
-                <h4>Product Designer</h4>
-                <p>Figma</p>
-              </div>
-              <span>90%</span>
-            </div>
-
-            <div className="progress">
-              <div className="progress-fill"></div>
-            </div>
-
-          </div>
-
-          <div className="floating-card top">
-            <h3>+2,847</h3>
-            <p>New Jobs</p>
-          </div>
-
-          <div className="floating-card bottom">
-            <h3>97%</h3>
-            <p>AI Score Match</p>
-          </div>
-
-        </div>
+        <img src={HeroImage} alt="Hero" className="hero-image" />
 
       </div>
 
