@@ -1,28 +1,41 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import Navbar from './components/navBar.jsx'
-import HeroSection from './components/heroSection.jsx'
-import BrowseByIndustry from './components/browseByIndustry.jsx'
-import FuturePathProcess from './components/FuturePathProcess.jsx'
-import FeedbackSection from './components/FeedbackSection.jsx'
-import Footer from './components/footer.jsx'
-import './App.css'
+import { Routes, Route } from "react-router-dom";
+
+import Navbar from "./components/navBar";
+import HeroSection from "./components/heroSection";
+import BrowseByIndustry from "./components/BrowseByIndustry";
+import FuturePathProcess from "./components/FuturePathProcess";
+import FeedbackSection from "./components/FeedbackSection";
+import Footer from "./components/footer";
+import TopHiringCompanies from "./components/TopHiringCompanies";
+
+function Home() {
+  return (
+    <>
+      <HeroSection />
+      <BrowseByIndustry />
+      <FuturePathProcess />
+      <FeedbackSection />
+    </>
+  );
+}
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
       <Navbar />
-      <HeroSection />
-      <BrowseByIndustry />
-      <FuturePathProcess/>
-      <FeedbackSection/>
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+
+        <Route
+          path="/companies"
+          element={<TopHiringCompanies />}
+        />
+      </Routes>
+
       <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

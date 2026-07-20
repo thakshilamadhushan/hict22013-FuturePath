@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "./navBar.css";
 import { FaBars, FaTimes, FaSearch } from "react-icons/fa";
+import { Link } from "react-router-dom";
+
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -18,11 +20,11 @@ const Navbar = () => {
 
         {/* Nav Links */}
         <ul className={menuOpen ? "nav-links active" : "nav-links"}>
-          <li><a href="/" className="active-link">Home</a></li>
-          <li><a href="/jobs">Find Jobs</a></li>
-          <li><a href="/companies">Companies</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/contact">Contact</a></li>
+          <li><Link to="/" className="active-link">Home</Link></li>
+          <li><Link to="/jobs">Find Jobs</Link></li>
+          <li><Link to="/companies">Companies</Link></li>
+          <li><Link to="/about">About</Link></li>
+          <li><Link to="/contact">Contact</Link></li>
         </ul>
 
         {/* Search */}
