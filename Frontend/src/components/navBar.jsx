@@ -2,12 +2,15 @@ import React, { useState } from "react";
 import "./navBar.css";
 import { FaBars, FaTimes, FaSearch } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import LoginModal from "./Login/LoginModal";
 
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [showLogin, setShowLogin] = useState(false);
 
   return (
+    <>
     <nav className="navbar">
       <div className="navbar-container">
 
@@ -38,7 +41,7 @@ const Navbar = () => {
 
         {/* Buttons */}
         <div className="nav-buttons">
-          <button className="login-btn">Login</button>
+          <button className="login-btn" onClick={()=>setShowLogin(true)}>Login</button>
           <button className="signup-btn">Sign Up</button>
         </div>
 
@@ -52,6 +55,13 @@ const Navbar = () => {
 
       </div>
     </nav>
+      {
+          showLogin && 
+          <LoginModal 
+              closeModal={()=>setShowLogin(false)}
+          />
+      }
+    </>
   );
 };
 
