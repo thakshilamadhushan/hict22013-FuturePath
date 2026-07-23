@@ -8,6 +8,7 @@ import FeedbackSection from "./components/FeedbackSection";
 import Footer from "./components/footer";
 import TopHiringCompanies from "./components/TopHiringCompanies";
 import FindJobs from "./pages/findJobs";
+import About from "./pages/about";
 
 function Home() {
   return (
@@ -34,6 +35,8 @@ function App() {
         />
 
         <Route path="/findjobs" element={<FindJobs />} />
+
+        <Route path="/about" element={<About/>}/>
       </Routes>
 
       <Footer />
