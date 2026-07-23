@@ -7,6 +7,7 @@ import FuturePathProcess from "./components/FuturePathProcess";
 import FeedbackSection from "./components/FeedbackSection";
 import Footer from "./components/footer";
 import TopHiringCompanies from "./components/TopHiringCompanies";
+import FindJobs from "./pages/findJobs";
 
 function Home() {
   return (
@@ -31,6 +32,8 @@ function App() {
           path="/companies"
           element={<TopHiringCompanies />}
         />
+
+        <Route path="/findjobs" element={<FindJobs />} />
       </Routes>
 
       <Footer />
