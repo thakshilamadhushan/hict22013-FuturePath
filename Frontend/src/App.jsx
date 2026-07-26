@@ -29,14 +29,11 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
 
-        <Route
-          path="/companies"
-          element={<TopHiringCompanies />}
-        />
+        <Route path="/companies" element={<TopHiringCompanies />} />
 
         <Route path="/findjobs" element={<FindJobs />} />
 
-        <Route path="/about" element={<About/>}/>
+        <Route path="/about" element={<About />} />
       </Routes>
 
       <Footer />
