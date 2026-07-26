@@ -16,8 +16,18 @@
   margin-bottom: 20px;
 }
 
-.logo span{
-  color:#5a3fff;
+.iconandname{
+  display: flex;
+  gap: 15px;
+}
+
+.footer-logo-icon {
+  width: 40px;
+  height: auto;
+}
+
+.logo span {
+  color: #5a3fff;
 }
 
 .logo-icon {
@@ -126,8 +136,10 @@
 
 .contact-info p {
   margin-bottom: 10px;
-  justify-content: center;
+  display: flex;
+  justify-content: left;
   align-items: center;
+  gap: 10px;
 }
 
 .footer-bottom {

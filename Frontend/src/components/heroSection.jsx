@@ -2,19 +2,25 @@ import React from "react";
 import starIcon from "../assets/start.png";
 import HeroImage from "../assets/hero.png";
 import "./heroSection.css";
-import {FaSearch, FaMapMarkerAlt, FaBriefcase, FaBuilding, FaUsers, FaAward, FaUpload} from "react-icons/fa";
+import {
+  FaSearch,
+  FaMapMarkerAlt,
+  FaBriefcase,
+  FaBuilding,
+  FaUsers,
+  FaAward,
+  FaUpload,
+} from "react-icons/fa";
 
 function HeroSection() {
   return (
     <section className="hero">
-
       <div className="hero-container">
-
         {/* Left Side */}
         <div className="hero-left">
-
           <div className="hero-badge">
-            <img src={starIcon} alt="AI Icon" />AI-Powered Job Matching Platform
+            <img src={starIcon} alt="AI Icon" />
+            AI-Powered Job Matching Platform
           </div>
 
           <h1>
@@ -26,31 +32,22 @@ function HeroSection() {
           </h1>
 
           <p>
-            Upload your CV, showcase your skills, and discover jobs
-            tailored precisely to your experience — powered by
-            cutting-edge AI.
+            Upload your CV, showcase your skills, and discover jobs tailored
+            precisely to your experience — powered by cutting-edge AI.
           </p>
 
           {/* Search Box */}
 
           <div className="job-search-card">
-
             <div className="search-row">
-
               <div className="input-box">
                 <FaSearch />
-                <input
-                  type="text"
-                  placeholder="Job title, keywords..."
-                />
+                <input type="text" placeholder="Job title, keywords..." />
               </div>
 
               <div className="input-box">
                 <FaMapMarkerAlt />
-                <input
-                  type="text"
-                  placeholder="Location..."
-                />
+                <input type="text" placeholder="Location..." />
               </div>
 
               <select className="job-type-select">
@@ -59,11 +56,9 @@ function HeroSection() {
                 <option>Part Time</option>
                 <option>Remote</option>
               </select>
-
             </div>
 
             <div className="button-row">
-
               <button className="find-btn">
                 <FaSearch />
                 Find Jobs
@@ -73,9 +68,7 @@ function HeroSection() {
                 <FaUpload />
                 Upload CV
               </button>
-
             </div>
-
           </div>
 
           {/* Tags */}
@@ -88,19 +81,16 @@ function HeroSection() {
             <button>Product Designer</button>
             <button>DevOps</button>
           </div>
-
         </div>
 
         {/* Right Side */}
 
         <img src={HeroImage} alt="Hero" className="hero-image" />
-
       </div>
 
       {/* Stats */}
 
       <div className="stats">
-
         <div className="stat-card">
           <FaBriefcase />
           <div>
@@ -132,9 +122,7 @@ function HeroSection() {
             <p>Placement Rate</p>
           </div>
         </div>
-
       </div>
-
     </section>
   );
 }

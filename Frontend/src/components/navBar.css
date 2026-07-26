@@ -39,15 +39,7 @@
 
 .navbar-logo-icon {
   width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, #6c3bff, #8b5cff);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-size: 18px;
-  font-weight: bold;
+  height: auto;
 }
 
 .navbar-logo h2 {
@@ -183,6 +175,12 @@
 }
 
 @media (max-width: 768px) {
+
+  .navbar{
+    left: 5px;
+    right: 5px;
+  }
+
   .navbar-container {
     width: 100%;
     padding: 15px 20px;
@@ -192,9 +190,8 @@
     font-size: 24px;
   }
 
-  .logo-icon {
+  .navbar-logo-icon {
     width: 35px;
-    height: 35px;
   }
 }
 
