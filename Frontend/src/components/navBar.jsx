@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./navBar.css";
 import { FaBars, FaTimes, FaSearch } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
+import Logo from "/FuturePathLogo.png";
 import LoginModal from "./Login/LoginModal";
 import SignupModal from "./SignUp/SignupModal";
 
@@ -16,7 +17,7 @@ const Navbar = () => {
         <div className="navbar-container">
           {/* Logo */}
           <div className="navbar-logo">
-            {/*<div className="logo-icon">✦</div>*/}
+            <img src={Logo} className="navbar-logo-icon"/>
             <h2>
               Future<span>Path</span>
             </h2>

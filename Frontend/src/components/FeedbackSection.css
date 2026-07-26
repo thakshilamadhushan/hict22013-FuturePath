@@ -6,7 +6,8 @@
 
 .testimonials {
   padding: 5% 9%;
-  background: radial-gradient(
+  background:
+    radial-gradient(
       circle at top center,
       rgba(180, 75, 255, 0.6),
       transparent 45%
@@ -16,9 +17,11 @@
   color: #fff;
 }
 
-
 .section-header {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: 70px;
 }
 
@@ -32,8 +35,11 @@
   backdrop-filter: blur(8px);
   font-size: 15px;
   margin-bottom: 25px;
+  width: fit-content;
+  display: flex; 
   justify-content: center;
   align-items: center;
+  gap: 10px;
 }
 
 .section-header h2 {

@@ -1,5 +1,5 @@
 import React from "react";
-import { MessageSquare } from 'lucide-react';
+import { MessageSquare } from "lucide-react";
 import "./FeedbackSection.css";
 
 const testimonials = [
@@ -34,7 +34,9 @@ const TestimonialsSection = () => {
     <section className="testimonials">
       <div className="container">
         <div className="section-header">
-          <span className="badge"><MessageSquare color="#ffffff" size={15} /> Success Stories</span>
+          <span className="badge">
+            <MessageSquare color="#ffffff" size={15} /> Success Stories
+          </span>
 
           <h2>Careers transformed by FuturePath</h2>
 
