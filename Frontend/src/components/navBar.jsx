@@ -3,11 +3,13 @@ import "./navBar.css";
 import { FaBars, FaTimes, FaSearch } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import LoginModal from "./Login/LoginModal";
+import SignupModal from "./SignUp/SignupModal";
 
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [showLogin, setShowLogin] = useState(false);
+  const [showSignup, setShowSignup] = useState(false);
 
   return (
     <>
@@ -42,7 +44,7 @@ const Navbar = () => {
         {/* Buttons */}
         <div className="nav-buttons">
           <button className="login-btn" onClick={()=>setShowLogin(true)}>Login</button>
-          <button className="signup-btn">Sign Up</button>
+          <button className="signup-btn" onClick={()=>setShowSignup(true)}>Sign Up</button>
         </div>
 
         {/* Mobile Menu */}
@@ -59,6 +61,13 @@ const Navbar = () => {
           showLogin && 
           <LoginModal 
               closeModal={()=>setShowLogin(false)}
+          />
+      }
+
+      {
+          showSignup && 
+          <SignupModal 
+              closeModal={()=>setShowSignup(false)}
           />
       }
     </>
