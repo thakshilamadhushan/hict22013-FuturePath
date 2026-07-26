@@ -25,36 +25,82 @@ const Navbar = () => {
           {/* Nav Links */}
           <ul className={menuOpen ? "nav-links active" : "nav-links"}>
             <li>
-              <NavLink to="/" className={({ isActive }) => (isActive ? "active-link" : "")}>
+              <NavLink
+                to="/"
+                className={({ isActive }) => (isActive ? "active-link" : "")}
+              >
                 Home
               </NavLink>
             </li>
             <li>
-              <NavLink to="/findjobs" className={({ isActive }) => (isActive ? "active-link" : "")}>Find Jobs</NavLink>
+              <NavLink
+                to="/findjobs"
+                className={({ isActive }) => (isActive ? "active-link" : "")}
+              >
+                Find Jobs
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/companies" className={({ isActive }) => (isActive ? "active-link" : "")}>Companies</NavLink>
+              <NavLink
+                to="/companies"
+                className={({ isActive }) => (isActive ? "active-link" : "")}
+              >
+                Companies
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/about" className={({ isActive }) => (isActive ? "active-link" : "")}>About</NavLink>
+              <NavLink
+                to="/about"
+                className={({ isActive }) => (isActive ? "active-link" : "")}
+              >
+                About
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/contact" className={({ isActive }) => (isActive ? "active-link" : "")}>Contact</NavLink>
+              <NavLink
+                to="/contact"
+                className={({ isActive }) => (isActive ? "active-link" : "")}
+              >
+                Contact
+              </NavLink>
+            </li>
+
+            {/* Mobile Buttons */}
+            <li className="mobile-buttons">
+              <button
+                className="nav-login-btn"
+                onClick={() => {
+                  setShowLogin(true);
+                  setMenuOpen(false);
+                }}
+              >
+                Login
+              </button>
+
+              <button
+                className="nav-signup-btn"
+                onClick={() => {
+                  setShowSignup(true);
+                  setMenuOpen(false);
+                }}
+              >
+                Sign Up
+              </button>
             </li>
           </ul>
 
-          {/* Search */}
-          <div className="search-box">
-            <FaSearch className="search-icon" />
-            <input type="text" placeholder="Search jobs, companies..." />
-          </div>
-
-          {/* Buttons */}
+          {/* Desktop Buttons */}
           <div className="nav-buttons">
-            <button className="login-btn" onClick={() => setShowLogin(true)}>
+            <button
+              className="nav-login-btn"
+              onClick={() => setShowLogin(true)}
+            >
               Login
             </button>
-            <button className="signup-btn" onClick={() => setShowSignup(true)}>
+            <button
+              className="nav-signup-btn"
+              onClick={() => setShowSignup(true)}
+            >
               Sign Up
             </button>
           </div>
