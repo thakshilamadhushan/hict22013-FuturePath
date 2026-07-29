@@ -10,6 +10,7 @@ import TopHiringCompanies from "./pages/TopHiringCompanies";
 import FindJobs from "./pages/findJobs";
 import About from "./pages/about";
 import Contact from "./pages/contact";
+import ProtectedRoute from "./components/ProtectedRoute";
 import JobSeekerDashboard from "./pages/jobSeeker/jobseekerDashboard";
 
 function Home() {
@@ -39,7 +40,7 @@ function App() {
 
         <Route path="/contact" element={<Contact/>}/>
 
-        <Route path="/jobseeker" element={<JobSeekerDashboard/>}/>
+        <Route path="/jobseeker" element={<ProtectedRoute role={"jobseeker"}> <JobSeekerDashboard/> </ProtectedRoute>}/>
       </Routes>
 
       <Footer />

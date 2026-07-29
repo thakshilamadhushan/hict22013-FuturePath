@@ -22,6 +22,7 @@ export default function LoginModal({ closeModal }) {
       email: "jobseeker@gmail.com",
       password: "123456",
       role: "jobseeker",
+      profilePic: "https://i.pravatar.cc/150?img=12",
     },
     {
       email: "employer@gmail.com",
