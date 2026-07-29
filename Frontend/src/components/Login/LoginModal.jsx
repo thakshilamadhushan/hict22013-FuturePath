@@ -28,6 +28,7 @@ export default function LoginModal({ closeModal }) {
       email: "employer@gmail.com",
       password: "123456",
       role: "employer",
+      profilePic: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP-RO26oq304_-stFTTKg9p8g6_rEPqTMQ_rl6524WH70cXRQyv0rQeBs&s=10",
     },
   ];
 

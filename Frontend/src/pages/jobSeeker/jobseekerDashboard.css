@@ -24,17 +24,6 @@ body {
   margin-bottom: 25px;
 }
 
-.badge {
-  display: inline-block;
-  padding: 8px 16px;
-  background: #eef2ff;
-  color: #5b4dff;
-  border-radius: 30px;
-  font-size: 14px;
-  font-weight: 600;
-  margin-bottom: 15px;
-}
-
 .top-header h1 {
   font-size: 38px;
   font-weight: 700;
