@@ -19,7 +19,7 @@ function HeroSection() {
         {/* Left Side */}
         <div className="hero-left">
           <div className="hero-badge">
-            <img src={starIcon} alt="AI Icon" />
+            {/*<img src={starIcon} alt="AI Icon" />*/}
             AI-Powered Job Matching Platform
           </div>
 

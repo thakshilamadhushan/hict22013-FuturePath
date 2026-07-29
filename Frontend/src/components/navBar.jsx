@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./navBar.css";
 import { FaBars, FaTimes, FaSearch } from "react-icons/fa";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import Logo from "/FuturePathLogo.png";
 import LoginModal from "./Login/LoginModal";
 import SignupModal from "./SignUp/SignupModal";
@@ -10,6 +10,13 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [showLogin, setShowLogin] = useState(false);
   const [showSignup, setShowSignup] = useState(false);
+  const [showProfileMenu, setShowProfileMenu] = useState(false);
+  const navigate = useNavigate();
+  const user = JSON.parse(localStorage.getItem("user"));
+  const logout = () => {
+    localStorage.removeItem("user");
+    navigate("/");
+  };
 
   return (
     <>
@@ -17,7 +24,7 @@ const Navbar = () => {
         <div className="navbar-container">
           {/* Logo */}
           <div className="navbar-logo">
-            <img src={Logo} className="navbar-logo-icon"/>
+            <img src={Logo} className="navbar-logo-icon" />
             <h2>
               Future<span>Path</span>
             </h2>
@@ -92,23 +99,88 @@ const Navbar = () => {
 
           {/* Desktop Buttons */}
           <div className="nav-buttons">
-            <button
-              className="nav-login-btn"
-              onClick={() => setShowLogin(true)}
-            >
-              Login
-            </button>
-            <button
-              className="nav-signup-btn"
-              onClick={() => setShowSignup(true)}
-            >
-              Sign Up
-            </button>
+            {user ? (
+              <div className="profile-container">
+                <img
+                  src={user.profilePic}
+                  alt="profile"
+                  className="profile-img"
+                  onClick={() => setShowProfileMenu(!showProfileMenu)}
+                />
+
+                {showProfileMenu && (
+                  <div className="profile-dropdown">
+                    <p>{user.name}</p>
+
+                    <button
+                      onClick={() =>
+                        navigate(
+                          user.role === "jobseeker"
+                            ? "/jobseeker"
+                            : "/employer",
+                        )
+                      }
+                    >
+                      Dashboard
+                    </button>
+
+                    <button onClick={logout}>Logout</button>
+                  </div>
+                )}
+              </div>
+            ) : (
+              <>
+                <button
+                  className="nav-login-btn"
+                  onClick={() => setShowLogin(true)}
+                >
+                  Login
+                </button>
+
+                <button
+                  className="nav-signup-btn"
+                  onClick={() => setShowSignup(true)}
+                >
+                  Sign Up
+                </button>
+              </>
+            )}
           </div>
 
           {/* Mobile Menu */}
-          <div className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
-            {menuOpen ? <FaTimes /> : <FaBars />}
+          <div className="mobile-right">
+            {user && (
+              <div className="profile-container">
+                <img
+                  src={user.profilePic}
+                  alt="profile"
+                  className="profile-img"
+                  onClick={() => setShowProfileMenu(!showProfileMenu)}
+                />
+
+                {showProfileMenu && (
+                  <div className="profile-dropdown mobile-dropdown">
+                    <button
+                      onClick={() =>
+                        navigate(
+                          user.role === "jobseeker"
+                            ? "/jobseeker/dashboard"
+                            : "/employer/dashboard",
+                        )
+                      }
+                    >
+                      Dashboard
+                    </button>
+
+                    <button onClick={logout}>Logout</button>
+                  </div>
+                )}
+              </div>
+            )}
+
+            <div className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
+              {menuOpen ? <FaTimes /> : <FaBars />}
+            </div>
           </div>
         </div>
       </nav>
