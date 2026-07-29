@@ -12,6 +12,7 @@ import About from "./pages/about";
 import Contact from "./pages/contact";
 import ProtectedRoute from "./components/ProtectedRoute";
 import JobSeekerDashboard from "./pages/jobSeeker/jobseekerDashboard";
+import EmployeeDashboard from "./pages/employee/EmployerDashboard";
 
 function Home() {
   return (
@@ -31,16 +32,12 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
-
         <Route path="/companies" element={<TopHiringCompanies />} />
-
         <Route path="/findjobs" element={<FindJobs />} />
-
         <Route path="/about" element={<About />} />
-
         <Route path="/contact" element={<Contact/>}/>
-
         <Route path="/jobseeker" element={<ProtectedRoute role={"jobseeker"}> <JobSeekerDashboard/> </ProtectedRoute>}/>
+        <Route path="/employer" element={<ProtectedRoute role={"employer"}> <EmployeeDashboard/> </ProtectedRoute>} />
       </Routes>
 
       <Footer />
