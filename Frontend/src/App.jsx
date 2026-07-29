@@ -10,6 +10,7 @@ import TopHiringCompanies from "./pages/TopHiringCompanies";
 import FindJobs from "./pages/findJobs";
 import About from "./pages/about";
 import Contact from "./pages/contact";
+import JobSeekerDashboard from "./pages/jobSeeker/jobseekerDashboard";
 
 function Home() {
   return (
@@ -37,6 +38,8 @@ function App() {
         <Route path="/about" element={<About />} />
 
         <Route path="/contact" element={<Contact/>}/>
+
+        <Route path="/jobseeker" element={<JobSeekerDashboard/>}/>
       </Routes>
 
       <Footer />
