@@ -181,7 +181,7 @@ label {
   font-size: 14px;
 }
 
-.input-box {
+.signup-input-box {
   height: 50px;
   display: flex;
   align-items: center;
@@ -191,12 +191,12 @@ label {
   background: #fafafa;
 }
 
-.input-box svg {
+.signup-input-box svg {
   color: #9b9b9b;
   font-size: 14px;
 }
 
-.input-box input {
+.signup-input-box input {
   flex: 1;
   border: none;
   outline: none;

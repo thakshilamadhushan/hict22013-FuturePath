@@ -88,21 +88,21 @@ const SignupModal = ({ closeModal }) => {
         <form>
           <label>Full name</label>
 
-          <div className="input-box">
+          <div className="signup-input-box">
             <FaRegUser />
             <input type="text" placeholder="Alex Johnson" />
           </div>
 
           <label>Email address</label>
 
-          <div className="input-box">
+          <div className="signup-input-box">
             <FaRegEnvelope />
             <input type="email" placeholder="you@example.com" />
           </div>
 
           <label>Password</label>
 
-          <div className="input-box">
+          <div className="signup-input-box">
             <FaLock />
 
             <input

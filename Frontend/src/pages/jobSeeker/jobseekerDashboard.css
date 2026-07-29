@@ -1,0 +1,646 @@
+/* Google Font */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f5f7ff;
+  color: #111827;
+}
+
+.dashboard {
+  margin: 6% 9%;
+}
+
+/* Header */
+
+.top-header {
+  margin-bottom: 25px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 8px 16px;
+  background: #eef2ff;
+  color: #5b4dff;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.top-header h1 {
+  font-size: 38px;
+  font-weight: 700;
+}
+
+.top-header p {
+  color: #6b7280;
+  margin-top: 6px;
+}
+
+/* ===========================
+   Welcome Card
+=========================== */
+
+.welcome-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  background: linear-gradient(90deg, #4f46e5, #9333ea, #4f46e5);
+  border-radius: 22px;
+  padding: 30px;
+  color: #fff;
+  margin-bottom: 30px;
+  box-shadow: 0 15px 35px rgba(79, 70, 229, 0.25);
+}
+
+.welcome-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.welcome-left img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 4px solid rgba(255, 255, 255, 0.3);
+}
+
+.welcome-left small {
+  opacity: 0.9;
+}
+
+.welcome-left h2 {
+  font-size: 32px;
+  margin: 4px 0;
+}
+
+.welcome-left p {
+  opacity: 0.9;
+}
+
+.welcome-right {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+/* Progress */
+
+.progress-ring {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+}
+
+.progress-ring svg {
+  position: absolute;
+}
+
+.progress-ring span {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+}
+
+.profiletag{
+  position: absolute;
+  margin-top: 70px;
+}
+
+.welcome-right button {
+  border: none;
+  outline: none;
+  background: #fff;
+  color: #4f46e5;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  padding: 12px 15px;
+  border-radius: 40px;
+  transition: 0.3s;
+}
+
+.welcome-right button:hover {
+  transform: translateY(-3px);
+}
+
+/* ===========================
+Stats
+=========================== */
+
+.jobseeker-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.jobseeker-stat-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  transition: 0.3s;
+}
+
+.jobseeker-stat-card:hover {
+  transform: translateY(-8px);
+}
+
+.jobseeker-card-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f3f4ff;
+  font-size: 22px;
+  margin-bottom: 7px;
+}
+
+.jobseeker-stat-card h2 {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.jobseeker-stat-card h4 {
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 7px;
+}
+
+.jobseeker-stat-card p {
+  color: #6b7280;
+  font-size: 12px;
+}
+
+/* =======================
+Bottom Grid
+======================= */
+
+.bottom-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 25px;
+}
+
+.applications,
+.interviews {
+  background: #fff;
+
+  border-radius: 20px;
+
+  padding: 25px;
+
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.section-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 25px;
+}
+
+.section-title button {
+  border: none;
+  background: none;
+  color: #4f46e5;
+
+  display: flex;
+  gap: 8px;
+
+  align-items: center;
+
+  cursor: pointer;
+}
+
+/* =======================
+Job Item
+======================= */
+
+.job-item {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  padding: 18px;
+
+  border-radius: 16px;
+
+  transition: 0.3s;
+
+  margin-bottom: 16px;
+
+  background: #fafafa;
+}
+
+.job-item:hover {
+  background: #f3f4ff;
+}
+
+.job-left {
+  display: flex;
+
+  align-items: center;
+
+  gap: 16px;
+}
+
+.logo {
+  width: 46px;
+
+  height: 46px;
+
+  border-radius: 50%;
+
+  color: #fff;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  font-weight: 700;
+}
+
+.job-left h4 {
+  margin-bottom: 5px;
+}
+
+.job-left p {
+  color: #6b7280;
+
+  font-size: 14px;
+}
+
+.job-right {
+  display: flex;
+
+  gap: 12px;
+
+  align-items: center;
+}
+
+.match {
+  background: #dcfce7;
+
+  color: #15803d;
+
+  padding: 6px 14px;
+
+  border-radius: 30px;
+
+  font-size: 13px;
+
+  font-weight: 600;
+}
+
+.status {
+  color: #fff;
+
+  padding: 6px 14px;
+
+  border-radius: 30px;
+
+  font-size: 13px;
+
+  font-weight: 600;
+}
+
+/* =======================
+Interview
+======================= */
+
+.interview-item {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-bottom: 20px;
+
+  padding-bottom: 20px;
+
+  border-bottom: 1px solid #eee;
+}
+
+.schedule {
+  text-align: right;
+}
+
+.schedule strong {
+  display: block;
+
+  color: #4f46e5;
+}
+
+.schedule small {
+  display: block;
+
+  color: #6b7280;
+
+  margin: 4px 0;
+}
+
+.schedule span {
+  font-size: 12px;
+
+  color: #2563eb;
+}
+
+.next-interview {
+  background: #fff8e6;
+
+  color: #c2410c;
+
+  border: 1px solid #facc15;
+
+  border-radius: 15px;
+
+  padding: 18px;
+
+  margin-top: 20px;
+
+  line-height: 1.6;
+}
+
+/* ================= Extra Grid ================= */
+
+.extra-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.recommend-card,
+.skills-card,
+.pipeline-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.recommend-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 0;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.recommend-item:last-child {
+  border: none;
+}
+
+.bolt {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #eef2ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+.sub {
+  color: #6b7280;
+  font-size: 13px;
+  margin: 8px 0 25px;
+}
+
+/* ================= Skills ================= */
+
+.skill {
+  margin-bottom: 22px;
+}
+
+.skill-head {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.progress {
+  height: 8px;
+  background: #e5e7eb;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  border-radius: 20px;
+}
+
+.skill-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6px;
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+.resource-btn {
+  width: 100%;
+  margin-top: 20px;
+  padding: 14px;
+  border: none;
+  background: #eef2ff;
+  color: #4f46e5;
+  border-radius: 14px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.resource-btn:hover {
+  background: #4f46e5;
+  color: #fff;
+}
+
+/* ================= Pipeline ================= */
+
+.pipeline-card {
+  margin-top: 30px;
+}
+
+.pipeline-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+  margin-top: 35px;
+}
+
+.pipe-item {
+  text-align: center;
+}
+
+.pipe-item h2 {
+  font-size: 38px;
+  margin-bottom: 15px;
+}
+
+.pipe-icon {
+  width: 32px;
+  height: 48px;
+  margin: auto;
+  border-radius: 18px 18px 6px 6px;
+}
+
+.pipe-item span {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 5px 14px;
+  border-radius: 20px;
+  background: #f3f4f6;
+  font-size: 13px;
+}
+
+/* =======================
+Responsive
+======================= */
+
+@media (max-width: 1100px) {
+  .dashboard{
+    margin: 10% 8%;
+  }
+
+  .jobseeker-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .extra-grid{
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .bottom-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard {
+    margin:10% 5%;
+  }
+
+  .top-header{
+    margin-top: 100px;
+  }
+
+  .top-header h1 {
+    font-size: 27px;
+  }
+
+  .top-header p{
+    font-size: 14px;
+  }
+
+  .welcome-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .welcome-right {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .jobseeker-stats-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .job-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .job-right {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .interview-item {
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .schedule {
+    text-align: left;
+  }
+
+  .extra-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .recommend-item{
+    flex-direction: column;
+  }
+
+  .recommend-item .job-right{
+    justify-content: center;
+  }
+
+  .pipeline-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 550px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .welcome-left {
+    flex-direction: column;
+
+    text-align: center;
+  }
+
+  .welcome-right {
+    flex-direction: column;
+  }
+
+  .welcome-right button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .section-title {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}

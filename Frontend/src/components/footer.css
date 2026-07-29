@@ -10,7 +10,7 @@
   gap: 60px;
 }
 
-.logo {
+.footerlogo {
   align-items: center;
   gap: 12px;
   margin-bottom: 20px;
@@ -26,7 +26,7 @@
   height: auto;
 }
 
-.logo span {
+.footerlogo span {
   color: #5a3fff;
 }
 
@@ -40,7 +40,7 @@
   justify-content: center;
 }
 
-.logo h2 {
+.footerlogo h2 {
   margin: 0;
   font-size: 1.5rem;
 }

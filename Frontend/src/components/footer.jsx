@@ -16,14 +16,14 @@ function Footer() {
       <div className="footer-container">
         {/* Left Section */}
         <div className="footer-brand">
-          <div className="logo">
+          <div className="footerlogo">
             <div className="iconandname">
               <img src={Logo} className="footer-logo-icon"/>
               <h2>
                 Future<span>Path</span>
               </h2>
             </div>
-            <p>
+            <p className="desc">
               AI-powered job discovery that connects the right talent with the
               right opportunity.
             </p>
