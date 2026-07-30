@@ -12,12 +12,6 @@
   padding-top: 100px;
 }
 
-.overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.08);
-}
-
 /* Blur Glow */
 .about-content::before,
 .about-content::after {
@@ -171,7 +165,7 @@
 .missionsection {
   width: 100%;
   background: #f7f8ff;
-  padding: 100px 8%;
+  padding: 2% 8%;
   display: grid;
   grid-template-columns: 1.1fr 1fr;
   gap: 70px;
@@ -303,7 +297,7 @@
 }
 .team-section {
   background: #f7f8ff;
-  padding: 100px 8%;
+  padding: 50px 8%;
 }
 
 .team-header {

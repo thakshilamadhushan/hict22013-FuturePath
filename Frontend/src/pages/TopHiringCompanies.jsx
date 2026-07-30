@@ -51,6 +51,30 @@ const companies = [
     rating: 4.5,
     color: "#00A1E0",
   },
+  {
+    name: "Stripe",
+    industry: "FinTech",
+    jobs: 98,
+    employees: "8,000+",
+    rating: 4.7,
+    color: "#8600e0",
+  },
+  {
+    name: "Figma",
+    industry: "Design Tools",
+    jobs: 54,
+    employees: "1,400+",
+    rating: 4.9,
+    color: "#e0009d",
+  },
+  {
+    name: "Notion",
+    industry: "Productivity",
+    jobs: 67,
+    employees: "700+",
+    rating: 4.6,
+    color: "#111827",
+  },
 ];
 
 function StarRating({ rating }) {
