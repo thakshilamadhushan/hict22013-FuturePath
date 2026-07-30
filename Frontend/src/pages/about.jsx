@@ -38,7 +38,7 @@ const team = [
 const AboutSection = () => {
   return (
     <div >
-      <div className="overlay"></div>
+      
 
       <div className="about-content">
         <span className="story-badge">✨ Our Story</span>
