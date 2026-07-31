@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&display=swap");
 
 .hero {
   min-height: 100vh;
@@ -53,11 +53,32 @@
 }
 
 .hero-left h1 span {
-  background: linear-gradient(90deg, #4f46e5, #9333ea);
-  -webkit-background-clip: text; 
-  background-clip: text;        
+  background: linear-gradient(
+    120deg,
+    #4f46e5,
+    #6366f1,
+    #7c3aed,
+    #9333ea,
+    #4f46e5
+  );
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;
+  animation: gradientFlow 6s ease infinite;
+}
+
+@keyframes gradientFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .hero-left p {
@@ -117,9 +138,25 @@
   width: 100%;
   max-width: 550px;
   height: auto;
-  top: 0;
-  margin-left: 0;
   display: block;
+
+  filter: drop-shadow(0 20px 40px rgba(79, 70, 229, 0.25));
+  animation: floatGlow 5s ease-in-out infinite;
+}
+
+@keyframes floatGlow {
+  0% {
+    transform: translateY(0);
+    filter: drop-shadow(0 20px 40px rgba(79, 70, 229, 0.20));
+  }
+  50% {
+    transform: translateY(-18px);
+    filter: drop-shadow(0 35px 60px rgba(147, 51, 234, 0.35));
+  }
+  100% {
+    transform: translateY(0);
+    filter: drop-shadow(0 20px 40px rgba(79, 70, 229, 0.20));
+  }
 }
 
 .button-row {
