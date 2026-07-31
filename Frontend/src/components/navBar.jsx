@@ -124,7 +124,7 @@ const Navbar = () => {
                       Dashboard
                     </button>
 
-                    <button onClick={logout}>Logout</button>
+                    <button onClick={logout} className="userlogout">Logout</button>
                   </div>
                 )}
               </div>
